@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/homeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/eqpmt_out_back_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_1" />
+
+            <TextView
+                android:id="@+id/eqpmt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="9dp"
+                android:drawableRight="@drawable/dingwei"
+                android:padding="5dp"
+                android:text="地址"
+                android:textColor="@color/white"
+                android:textSize="36px" />
+
+            <ImageView
+                android:id="@+id/eqpmt_out_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zhizhen1" />
+
+            <ImageView
+                android:id="@+id/eqpmt_in_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shiwai" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/judge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="差"
+                    android:textColor="@color/white"
+                    android:textSize="34dp" />
+
+                <ImageView
+                    android:id="@+id/pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="11dp"
+                    android:src="@drawable/pm_25" />
+
+                <TextView
+                    android:id="@+id/squer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/eqpmt_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/eqpmt_tempurature"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="72dp"
+                android:text="风"
+                android:textColor="@color/white"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/eqpmt_tempurature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="27dp"
+                android:paddingBottom="93dp"
+                android:text="温度"
+                android:textColor="@color/white"
+                android:textSize="52px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/eqpmt_center"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/iv_dress"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/chuanyi" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_dress"
+                    android:paddingRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_dress_advice_num"
+                        style="@style/air_outdoor_outnum"
+                        android:layout_above="@+id/tv_dress_line"
+                        android:text="@string/equipment_dress" />
+
+                    <View
+                        android:id="@+id/tv_dress_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_dress_advice"
+                        style="@style/air_outdoor_advice"
+                        android:layout_below="@+id/tv_dress_line"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="穿衣建议" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="9dp"
+                android:background="@color/air_outdoor_verticol_line"
+                android:gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/iv_cmf"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/shufu" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_cmf"
+                    android:paddingRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_cmf_advice_num"
+                        style="@style/air_outdoor_outnum"
+                        android:layout_above="@+id/tv_dress_line2"
+                        android:text="@string/equipment_comf" />
+
+                    <View
+                        android:id="@+id/tv_dress_line2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_cmf_advice"
+                        style="@style/air_outdoor_advice"
+                        android:layout_below="@+id/tv_dress_line2"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="穿衣建议" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="9dp"
+                android:background="@color/air_outdoor_verticol_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/iv_sport"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/huwai" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_sport"
+                    android:paddingRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_sport_advice_num"
+                        style="@style/air_outdoor_outnum"
+                        android:layout_above="@+id/tv_dress_line3"
+                        android:text="@string/equipment_sport" />
+
+                    <View
+                        android:id="@+id/tv_dress_line3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_sport_advice"
+                        style="@style/air_outdoor_advice"
+                        android:layout_below="@+id/tv_dress_line3"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="穿衣建议" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+       </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

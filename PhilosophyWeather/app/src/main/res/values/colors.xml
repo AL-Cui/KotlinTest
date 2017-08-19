@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="material_amber_50">#FFF8E1</color>
+    <color name="air_outdoor_verticol_line">#d1d1d1</color>
+    <color name="air_outdoor_outnum_tv_color">#3a3a3a</color>
+    <color name="air_outdoor_advice_tv_color">#b2b2b2</color>
+</resources>

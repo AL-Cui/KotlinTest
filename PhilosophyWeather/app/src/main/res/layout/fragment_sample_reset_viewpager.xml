@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager">
+
+    </android.support.v4.view.ViewPager>
+    <com.example.cuiduo.philosophyweather.View.CircleIndicator
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="48dp"
+        android:id="@+id/indicator">
+
+    </com.example.cuiduo.philosophyweather.View.CircleIndicator>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="重置"
+        android:id="@+id/button"
+        style="@style/DefaultButton"/>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PhilosophyWeather</string>
+    <string name="equipment_close">"请开机"</string>
+    <string name="equipment_dress">穿衣指数</string>
+    <string name="equipment_comf">舒服指数</string>
+    <string name="equipment_sport">晨练指数</string>
+</resources>
