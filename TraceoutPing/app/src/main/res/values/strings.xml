@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TraceoutPing</string>
+    <string name="no_ping" >Are you sure about the URL?</string>
+    <string name="error" >error</string>
+    <string name="no_connectivity" >no_connectivity</string>
+    <string name="timeout" >timeout</string>
+    <string name="placeholder" >www.google.fr</string>
+    <string name="activity_button" >button</string>
+    <string name="no_text" >Please enter an ip or URL</string>
+    <string name="string_test" >string_test</string>
+</resources>
